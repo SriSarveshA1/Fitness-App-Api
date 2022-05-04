@@ -13,6 +13,7 @@ db.sequelize.sync({force:true}).then(()=>{
 
 require("./routes/auth.routes")(app);
 require("./routes/tracRecords.routes")(app);
+require("./routes/symptoms.routes")(app);
 const PORT=serverConfig.PORT||8000;
 app.listen(PORT,()=>{
     console.log("Server listening on port "+PORT);

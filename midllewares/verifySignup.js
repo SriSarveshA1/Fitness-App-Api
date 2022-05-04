@@ -36,7 +36,7 @@ const checkDuplicateUser_email_or_password=(req, res, next) => {
         return res.status(400).send({message: "Password is not provided"});
     }
     else{
-        if(!validatePassword(req.body.password))
+        if(false)
         {
             return res.status(400).send({message: "password is not valid:: Minimum eight characters, at least one letter and one number"});
         }
