@@ -31,7 +31,7 @@ db.Doctor=require("./doctor.model")(sequelize,Sequelize);
 2.Prescription or 2.Symptoms
 */
 //There are many users(There can be both patient and doctor) So there are many users with many prescriptions but one prescription belongs to one user
-db.User.hasMany(db.Prescription);
+db.User.hasMany(db.Prescription);//so for each prescription there will be a UserId and that user will be a patient
 
 //There are many users(There can be both patient and doctor) So there are many users with many symptoms but one symptom belongs to one user
 db.User.hasMany(db.Symptoms);
